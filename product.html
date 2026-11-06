@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مجموعه گیاهان آپارتمانی VERDÉ همراه با راهنمای نگهداری">
+  <title>فروشگاه گیاهان | VERDÉ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">VERDÉ<span>.</span></a>
+    <nav class="nav-links">
+      <a href="index.html">خانه</a>
+      <a href="products.html" class="active">فروشگاه</a>
+      <a href="index.html#about">درباره ما</a>
+      <a href="index.html#categories">دسته‌بندی</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart-link" href="#product-list">
+        سبد خرید <span id="cart-count">۰</span>
+      </a>
+      <button class="menu-toggle" aria-label="باز کردن منو">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div>
+        <span class="eyebrow">THE GREEN COLLECTION / 2026</span>
+        <h1>گیاه مناسب<br>فضای تو.</h1>
+        <p>از اولین گیاهت تا یک جنگل کوچک خانگی؛ از اینجا شروع کن.</p>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1100&q=85"
+        alt="مجموعه گیاهان سبز و سرزنده"
+      >
+    </section>
+
+    <section class="section shop-section" id="product-list">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CURATED FOR YOUR SPACE</span>
+          <h2>مجموعه گیاهان</h2>
+          <p class="muted">۵ انتخاب برای شروع یک زندگی سبزتر</p>
+        </div>
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="product-search" type="search" placeholder="جست‌وجوی گیاه...">
+        </label>
+      </div>
+
+      <div class="filter-row" id="product-filters">
+        <button class="filter-btn active" data-filter="all">همه محصولات</button>
+        <button class="filter-btn" data-filter="easy">نگهداری آسان</button>
+        <button class="filter-btn" data-filter="tropical">گرمسیری</button>
+        <button class="filter-btn" data-filter="decor">دکوراتیو</button>
+      </div>
+
+      <div class="product-grid shop-grid" id="all-products"></div>
+      <p class="empty-state" id="empty-state" hidden>محصولی با این مشخصات پیدا نشد.</p>
+    </section>
+
+    <section class="care-banner">
+      <span class="eyebrow">A HEALTHY PLANT IS A HAPPY PLANT</span>
+      <h2>هر گیاه، راهنمای مخصوص خودش را دارد.</h2>
+      <p>قبل از خرید، نور، میزان آبیاری و شرایط فضای خودت را بررسی کن.</p>
+      <a href="index.html#about" class="btn btn-light">درباره فلسفه ما</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="logo">VERDÉ<span>.</span></a>
+    <p>برای زندگی‌هایی نزدیک‌تر به طبیعت.</p>
+    <div><a href="index.html">خانه</a><a href="index.html#about">درباره ما</a></div>
+    <small>© 2026 VERDÉ — پروژه نمونه طراحی وب</small>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
